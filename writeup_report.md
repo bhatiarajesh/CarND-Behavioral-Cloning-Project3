@@ -15,8 +15,6 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/model.png "Model Visualization"
-[image2]: ./examples/model_summary.png “Model Summary“
-[image3]: ./examples/training_summary.png “Training Summary”
 
 ---
 ### Prerequisites
@@ -45,9 +43,9 @@ Training requires data generated using the simulator:
 To start the training:
 * Activate the environment defined : `source activate <environment_name>`
 * Ensure that the condo env is updated with the following packages
-- conda install -c conda-forge flask=0.11.1
-- conda install -c conda-forge eventlet=0.19.0
-- conda install -c conda-forge python-socketio=1.5.1
+** conda install -c conda-forge flask=0.11.1
+** conda install -c conda-forge eventlet=0.19.0
+** conda install -c conda-forge python-socketio=1.5.1
 * Train the model by running the model.py as follows
 ```sh
 python mode1.py
@@ -73,7 +71,7 @@ Here is a visualization of the architecture -
 
 The model contains dropout layers in order to reduce overfitting.The model was trained and validated on different data sets to ensure that the model was not overfitting. The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.The model used an adam optimizer, so the learning rate was not tuned manually. Here is the model summary - 
 
-![alt text][image2]
+![](./examples/model_summary.png)
 
 Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road. I applied some parameters to calculate the steering correction when taking left/right camera images. The final step was to run the simulator to see how well the car was driving around track one. At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
 
@@ -111,7 +109,7 @@ Using generators with Keras allows us to artificially generate epochs with more(
 
 Here is the training summary -
 
-![alt text][image3]
+![][./examples/training_summary.png]
 
 ### Results
 
