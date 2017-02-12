@@ -115,6 +115,9 @@ Here is the training summary -
 
 The model was capable to run autonoumously on the Udacity simulator’s track 1 for multiple laps. I tested for atleast 6 laps. 
 
+Here is the animated gif showing the autonomous driving on track 1
+![](./examples/autonomous-driving-track1.gif)
+
 I tested the same model on track 2 in the simulator and found that car could not complete lap 1. I suspect the training data is overfitted and collecting additional data and some further data augmentation maybe required to train the model to effectively drive on track 2.
 
 I was able to make a video of the model working on the simulator for track 1 but did not want to load it here and had trouble uploading to youtube.
