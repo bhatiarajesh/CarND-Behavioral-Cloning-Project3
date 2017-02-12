@@ -109,13 +109,15 @@ Using generators with Keras allows us to artificially generate epochs with more(
 
 Here is the training summary -
 
-![][./examples/training_summary.png]
+![](./examples/training_summary.png)
 
 ### Results
 
 The model was capable to run autonoumously on the Udacity simulator’s track 1 for multiple laps. I tested for atleast 6 laps. 
 
 I tested the same model on track 2 in the simulator and found that car could not complete lap 1. I suspect the training data is overfitted and collecting additional data and some further data augmentation maybe required to train the model to effectively drive on track 2.
+
+I was able to make a video of the model working on the simulator for track 1 but did not want to load it here and had trouble uploading to youtube.
 
 ### Conclusions
 
